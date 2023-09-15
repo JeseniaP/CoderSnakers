@@ -1,0 +1,255 @@
+
+
+  h2 {
+    color: #000000;
+    font-size: 24px;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 0; /* Elimina el espacio superior predeterminado */
+  }
+  
+/* Estilos para el título "Conocelos" */
+h3.text-align-left {
+    text-align: center; /* Centra horizontalmente el texto */
+    font-weight: bold; /* Pone el texto en negrita */
+    font-size: 24px; /* Aumenta el tamaño del texto (ajusta el valor según tus preferencias) */
+}
+
+  
+.parpadeo-content {
+  background-color: #7eff67;
+  border-radius: 10px;
+  box-shadow: rgba(35, 1, 131, 0.5) 0px 0px 10px;
+  font-size: 16px;
+  /* font-weight: bold; */
+  line-height: 1.5;
+  margin-right: auto; /* Centra el borde hacia el lado derecho */
+  animation: parpadeo 1s infinite; /* Aplica la animación de parpadeo al contenido */
+}
+
+
+@keyframes parpadeo {
+  0%, 100% {
+    border-color: red; /* Color inicial y final del borde */
+  }
+  25% {
+    border-color: yellow; /* Color del borde en el 25% del ciclo */
+  }
+  50% {
+    border-color: green; /* Color del borde en el 50% del ciclo */
+  }
+  75% {
+    border-color: blue; /* Color del borde en el 75% del ciclo */
+  }
+}
+
+
+
+.image-container {
+    float: left;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-right: 20px; /* Ajusta el margen derecho para mover la imagen hacia la derecha */
+}
+
+.image-container img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    height: auto;
+    margin-right: auto; /* Centra la imagen horizontalmente dentro del contenedor */
+    margin-left: auto; /* Centra la imagen horizontalmente dentro del contenedor */
+}
+
+
+
+.container {
+    text-align: center; /* Centra horizontalmente el contenido */
+  }
+.container span {
+    font-size: 120pt;
+    font-weight: bold;
+    position: relative;
+    font-family: "Fredoka One";
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .container span::before {
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(15px);
+  }
+  .container span::after {
+    content: var(--l);
+    position: absolute;
+    height: 200%;
+    width: 300px;
+    top: 80%;
+    left: 0;
+    filter: blur(30px);
+    transform: rotateX(50deg);
+  }
+  .container span:hover {
+    filter: contrast(250%);
+  }
+  .container span:nth-child(1) {
+    color: #00bef8;
+  }
+  .container span:nth-child(2) {
+    color: #ff0697;
+  }
+  .container span:nth-child(3) {
+    color: #ff4d00;
+  }
+  .container span:nth-child(4) {
+    color: #ffe600;
+  }
+  .container span:nth-child(5) {
+    color: #bb00ff;
+  }
+
+
+
+
+.Personajes {
+    margin-top: 150px; /* Ajusta el valor según la cantidad de espacio que desees */
+    text-align: center;
+}
+
+
+
+.Personajes span {
+    font-size: 120pt;
+    font-weight: bold;
+    position: relative;
+    font-family: "Fredoka One";
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.Personajes span::before {
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(15px);
+  }
+
+
+.Personajes span::after {
+    content: var(--l);
+  position: absolute;
+  height: 200%;
+  width: 300px;
+  top: 80%;
+  left: 0;
+  filter: blur(30px);
+  transform: rotateX(50deg);
+}
+
+.Personajes span:hover {
+    filter: contrast(250%);
+}
+
+.Personajes span:nth-child(1) {
+    color: #09ffe6;
+}
+
+.Personajes span:nth-child(2) {
+    color: #09ffe6;
+}
+
+.Personajes span:nth-child(3) {
+    color: #09ffe6;
+}
+
+.Personajes span:nth-child(4) {
+    color: #09ffe6;
+}
+
+.Personajes span:nth-child(5) {
+    color: #09ffe6;
+}
+
+.Personajes span:nth-child(6) {
+    color: #09ffe6;
+}
+
+.Personajes span:nth-child(7) {
+    color: #09ffe6;
+}
+
+.Personajes span:nth-child(8) {
+    color: #09ffe6;
+}
+
+.Personajes span:nth-child(9) {
+    color: #09ffe6;
+}
+
+.Personajes span:nth-child(10) {
+    color: #09ffe6;
+}
+
+
+
+
+/* Estilos para la cuadrícula de imágenes */
+/* Estilos para la cuadrícula de imágenes */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilos para cada cuadro de imagen */
+.image-box {
+    flex: 0 1 calc(25% - 20px);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 10px; /* Agrega margen para separar las imágenes */
+}
+
+.centered {
+    flex-basis: calc(25% - 20px);
+}
+
+/* Estilos para las imágenes */
+.im1 {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Efecto de cambio de color de fondo */
+@keyframes cambioColorFondo {
+    0%, 100% {
+        background-color: red;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: blue;
+    }
+}
+
+/* Efecto de parpadeo de las imágenes */
+@keyframes parpadeoImagen {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    25% {
+        filter: hue-rotate(90deg);
+    }
+    50% {
+        filter: hue-rotate(180deg);
+    }
+    75% {
+        filter: hue-rotate(270deg);
+    }
+}
